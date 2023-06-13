@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+</head>
+<body>
+    <form action="/">
+        <fieldset>
+            <legend>Cadastro de usuário</legend>
+
+            <section>
+                <div>
+                    <label for="input-nome">Nome: </label>
+                    <input id="input-nome" type="name" placeholder="Digite seu nome aqui...">
+                    <label for="input-email" >Email: </label>
+                    <input id="input-email" type="email" placeholder="digite seu email aqui...">
+                </div>
+                <p></p>
+
+                <div>
+                    <label for="input-password">Senha: </label>
+                    <input id="input-password" type="password" placeholder="Digite sua senha aqui...">
+                    <label for="input-password">Confirme a senha: </label>
+                    <input id="input-password" type="password" placeholder="Repita a senha...">
+                </div>
+            </section>
+           <p></p>
+
+            <section>               
+                <label for="intput-descricao">O que te motivou participar do evento? : </label><br>
+                <textarea name="descricao" id="intput-descricao" cols="50" rows="5" placeholder=""></textarea>
+            </section>
+
+            <section>
+                <label for="select-modulo"></label>
+                <select name="modulo" id="select-modulo">
+                    <option hidden>Selecione uma opção</option>
+                    <option value="modulo-1">Módulo 1</option>
+                    <option value="modulo-2">Módulo 2</option>
+                    <option value="modulo-3">Módulo 3</option>
+                </select>
+            </section>
+
+            <section>
+                <p>Deseja receber novidades em seu email? </p>
+                <div>
+                    <label for="radio-sim">Sim</label>
+                    <input id="radio-sim" type="radio" name="novidade" value="novidade-sim">
+
+                    <label for="radio-nao">Não</label>
+                    <input id="radio-nao" type="radio" name="novidade" value="novidade-nao">
+                </div>
+            </section>
+            <p></p>
+            <button>Cadastrar</button>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
